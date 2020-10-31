@@ -1,10 +1,10 @@
 {
     "identifier": "act.WordPressDOCBLOCK",
-    "name": "WordPress DOC BLOCK",
+    "name": "WordPress DocBlock",
     "vendor": "Fernanod José La Calle Prada",
     "organization": "Actycrea 110 S.L",
     "description": "Extension for the NOVA code editor, to be able to include CLIPS with the WordPress documentation blocks, according to its standard.",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "repository": "https://github.com/actycrea/nova.extension.wpdocblock.git",
     "homepage": "https://github.com/actycrea/nova.extension.wpdocblock",
     "bugs": "https://github.com/actycrea/nova.extension.wpdocblock/issues",

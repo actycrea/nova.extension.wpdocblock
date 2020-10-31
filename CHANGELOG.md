@@ -1,4 +1,4 @@
-# WordPress DOC BLOCK: Change Log
+# WordPress DocBlock: Change Log
 
 ## Version 0.1.0
 
@@ -12,3 +12,8 @@
 ## Version 0.1.1
 
 - Add icons PNG files.
+
+## Version 0.1.2
+
+- FIX version.
+- FIX brand.
