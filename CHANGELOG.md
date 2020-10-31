@@ -8,3 +8,7 @@
 - Add blocks 'Requires & Includes'.
 - Add blocks 'Hooks'.
 - Add blocks 'Inline Comments'.
+
+## Version 0.1.1
+
+- Add icons PNG files.
