@@ -1,0 +1,13 @@
+{
+    "identifier": "act.WordPressDOCBLOCK",
+    "name": "WordPress DOC BLOCK",
+    "vendor": "Fernanod José La Calle Prada",
+    "organization": "Actycrea 110 S.L",
+    "description": "Generador de los bloques de documentación para realizar desarrollos u actualizaciones de código en WordPress.",
+    "version": "0.1",
+    "repository": "",
+    "homepage": "",
+    "bugs": "",
+    "license": "GNU GPLv3",
+    "categories": ["clips"]
+}
