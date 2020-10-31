@@ -1,20 +1,112 @@
 {
   "clips" : [
     {
-      "content" : "Fernando José La Calle Prada",
-      "name" : "User Signature",
-      "trigger" : "usersig"
-    },
-    {
-      "name" : "Group Name",
+      "name" : "File Headers",
       "children" : [
         {
-          "content" : "console.log(${:message})",
-          "name" : "Console Log",
-          "scope" : "editor",
-          "shortcut" : "cmd-alt-shift-l",
-          "syntax" : "javascript",
-          "trigger" : "log"
+          "content" : "/**\n * ${:Summary} (no period for file headers)\n *\n * ${:Description}. (use period)\n *\n * @link ${:URL}\n *\n * @package WordPress\n * @subpackage ${:Name}\n * @since ${:x.x.x}\n */",
+          "name" : "Block Full",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-f",
+          "syntax" : "php-html",
+          "trigger" : "act_fh_full"
+        }
+      ]
+    },
+    {
+      "name" : "Function & Methods",
+      "children" : [
+        {
+          "content" : "/**\n * ${:Summary}.\n *\n * ${:Description}.\n *\n * @todo ${:todo}\n *\n * @since ${:x.x.x}\n * @deprecated ${:x.x.x} Use ${:new_function()}\n * @see ${:new_function()}\n * @link ${:URL}\n * @global ${:type} $${:varname} ${:Description}.\n * @global ${:type} $${:varname} ${:Description}.\n *\n * @param ${:type} $${:varname} ${:Description}.\n * @param ${:type} $${:varname} ${:Description}. Default ${:value}.\n * @param array $args {\n *   Optional. An array of arguments.\n *\n *   @type ${:type}    $${:varname}    ${:Description}. Default ${:value}. Accepts ${:value}, ${:value}.\n *                               (aligned with Description, if wraps to a new line)\n *   @type ${:type}    $${:varname}    ${:Description}.                              \n * }\n * @return ${:type} ${:Description}.\n */",
+          "name" : "Block Full",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-p",
+          "syntax" : "php-html",
+          "trigger" : "act_fm_full"
+        }
+      ]
+    },
+    {
+      "name" : "Classes",
+      "children" : [
+        {
+          "content" : "/**\n * ${:Summary}.\n *\n * ${:Description}.\n *\n * @since ${:x.x.x}\n * @since ${:x.x.x} ${:Description_Change_Log}\n *\n * @see ${:Super_Class}\n */",
+          "name" : "Block Full",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-c",
+          "syntax" : "php-html",
+          "trigger" : "act_c_full"
+        },
+        {
+          "content" : "/**\n * ${:Summary}.\n *\n * @since ${:x.x.x}\n * @var ${:type} $${:varname} ${:Description}.\n */",
+          "name" : "Block Properties",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-v",
+          "syntax" : "php-html",
+          "trigger" : "act_c_properties"
+        },
+        {
+          "content" : "/**\n * ${:Summary}.\n *\n * @since ${:x.x.x}\n * @var ${:type} $${:varname} ${:Description}.\n */",
+          "name" : "Block Constants",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-c",
+          "syntax" : "php-html",
+          "trigger" : "act_c_constants"
+        }
+      ]
+    },
+    {
+      "name" : "Requires & Includes",
+      "children" : [
+        {
+          "content" : "/**\n * ${:Summary}.\n */",
+          "name" : "Block Full",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-r",
+          "syntax" : "php-html",
+          "trigger" : "act_ri_full"
+        }
+      ]
+    },
+    {
+      "name" : "Hooks (Action & Filters)",
+      "children" : [
+        {
+          "content" : "/**\n * ${:Summary}.\n *\n * ${:Description}.\n *\n * @since ${:x.x.x}\n *\n * @param ${:type} $${:varname} ${:Description}.\n * @param ${:type} $${:varname} ${:Description}. Default ${:value}.\n * @param array $args {\n *   Optional. An array of arguments.\n *\n *   @type ${:type}    $${:varname}    ${:Description}. Default ${:value}. Accepts ${:value}, ${:value}.\n *                               (aligned with Description, if wraps to a new line)\n *   @type ${:type}    $${:varname}    ${:Description}.                              \n * }\n * @return ${:type} ${:Description}. (Only filters hooks. Action hooks return nothing, and filter hooks always return their first parameter)\n */",
+          "name" : "Block Full",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-h",
+          "syntax" : "php-html",
+          "trigger" : "act_h_full"
+        },
+        {
+          "content" : "/** This action/filter is documented in ${:path_to_file} */",
+          "name" : "Block Duplicate",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-d",
+          "syntax" : "php-html",
+          "trigger" : "act_h_duplicate"
+        }
+      ]
+    },
+    {
+      "name" : "Inline Comments",
+      "children" : [
+        {
+          "content" : "// ${:Description}.",
+          "name" : "Block Single",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-s",
+          "syntax" : "php-html",
+          "trigger" : "act_ic_single"
+        },
+        {
+          "content" : "/*\n * ${:line1}\n * ${:line2}\n * ${:line3}\n */",
+          "name" : "Block Multiple",
+          "scope" : "wpdocblock",
+          "shortcut" : "cmd-alt-ctrl-m",
+          "syntax" : "php-html",
+          "trigger" : "act_ic_multiple"
         }
       ]
     }

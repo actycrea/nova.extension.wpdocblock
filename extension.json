@@ -3,11 +3,11 @@
     "name": "WordPress DOC BLOCK",
     "vendor": "Fernanod José La Calle Prada",
     "organization": "Actycrea 110 S.L",
-    "description": "Generador de los bloques de documentación para realizar desarrollos u actualizaciones de código en WordPress.",
-    "version": "0.1",
-    "repository": "",
-    "homepage": "",
-    "bugs": "",
-    "license": "GNU GPLv3",
-    "categories": ["clips"]
+    "description": "Extension for the NOVA code editor, to be able to include CLIPS with the WordPress documentation blocks, according to its standard.",
+    "version": "0.1.0",
+    "repository": "https://github.com/actycrea/nova.extension.wpdocblock.git",
+    "homepage": "https://github.com/actycrea/nova.extension.wpdocblock",
+    "bugs": "https://github.com/actycrea/nova.extension.wpdocblock/issues",
+    "license": "MIT",
+    "categories": [ "clips" ]
 }
